@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 70rem; /* 1120px - larg post + larg sidebar + distancia / 16 =  70rem */
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;/* fr - tamanho flexivel*/
+    gap: 2rem;/* 32px */
+    align-items: flex-start; /* padrão stretch */
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 87.5%;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;/* fr - tamanho flexivel*/
+    }
+}
+
+ /* 16 --> 100%
+    14 --> ?
+    14 * 100 / 16 = 87,5 */
